@@ -10,7 +10,7 @@ LOW=false
 class Duino < FXMainWindow
 	
 def initialize(app, title, w, h)  
-    @pin = Pin.new(1)
+    @pin = Pin.new(0)
     @pin.set_as_output()
     super(app, title, :width => w, :height => h)  
     add_quit_button
